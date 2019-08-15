@@ -29,13 +29,7 @@ public class VideoConverter {
     }
 
     public static void main(String [] args){
-        VideoConverter vta = new VideoConverter();
-        try{
-            vta.convertVideoToAudio(new File("G:\\project\\videoToAudioConverter\\videoToAudi.mp4"));
-        }
-        catch(Exception e){
-            System.out.println("Could not open video file");
-        }
+        new VideoConverter().convertVideoToAudio(new File("G:\\project\\videoToAudioConverter\\videoToAudi.mp4"));
     }
 
 }
